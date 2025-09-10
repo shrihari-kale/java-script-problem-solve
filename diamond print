@@ -1,0 +1,23 @@
+// Prints a solid diamond where `n` is the width of the middle row (prefer odd)
+function printDiamond(n) {
+  if (n <= 0) return;
+  if (n % 2 === 0) n = n - 1; // make odd for perfect symmetry
+
+  const mid = Math.floor(n / 2);
+
+  // top including middle
+  for (let i = 0; i <= mid; i++) {
+    const stars = 2 * i + 1;
+    const spaces = mid - i;
+    console.log(' '.repeat(spaces) + '*'.repeat(stars));
+  }
+
+  // bottom (below middle)
+  for (let i = mid - 1; i >= 0; i--) {
+    const stars = 2 * i + 1;
+    const spaces = mid - i;
+    console.log(' '.repeat(spaces) + '*'.repeat(stars));
+  }
+}
+
+printDiamond(7);
