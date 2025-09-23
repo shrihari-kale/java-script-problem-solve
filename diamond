@@ -1,0 +1,19 @@
+const n = 5; // Number of rows for the top half (excluding middle)
+
+// Top half of diamond
+for (let i = 1; i <= n; i++) {
+    // Print spaces
+    let spaces = ' '.repeat(n - i);
+    // Print stars
+    let stars = '*'.repeat(2 * i - 1);
+    console.log(spaces + stars);
+}
+
+// Bottom half of diamond
+for (let i = n - 1; i >= 1; i--) {
+    // Print spaces
+    let spaces = ' '.repeat(n - i);
+    // Print stars
+    let stars = '*'.repeat(2 * i - 1);
+    console.log(spaces + stars);
+}
