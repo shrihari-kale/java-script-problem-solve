@@ -1,0 +1,12 @@
+let n =121;
+let str = n.toString();
+let reversed =str.split("").reverse().join("");
+
+if(str === reversed){
+  console.log("true");
+}else{
+  console.log("false");
+}
+
+output:
+true
