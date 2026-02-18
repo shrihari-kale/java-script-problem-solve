@@ -1,0 +1,16 @@
+   let n=5;
+   for(let j=1; j<=n; j++){
+    
+    let space="  ".repeat(n-j);
+    let str="# ".repeat(j);
+    console.log(space+str.trim());
+
+ }
+ output:
+        #
+      # #
+    # # #
+  # # # #
+# # # # #
+
+    
