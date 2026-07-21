@@ -1,0 +1,14 @@
+ count Occurrences
+
+function countOccurrence(arr, target) {
+  let count = 0;
+
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] === target) {
+      count++;
+    }
+   }
+  return count;
+   }
+let arr = [6, 4, 4, 4, 5,5];
+console.log(countOccurrence(arr, 5));
