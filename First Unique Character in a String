@@ -1,0 +1,21 @@
+function firstUniqChar (s) {
+    let count = {};
+
+    // Step 1: count frequency
+    for (let ch of s) {
+        count[ch] = (count[ch] || 0) + 1;
+    }
+
+    // Step 2: find first unique
+    for (let i = 0; i < s.length; i++) {
+        if (count[s[i]] === 1) {
+            return i;
+        }
+    }
+
+    return -1;
+};
+let: s = "loveleetcode"
+console.log(firstUniqChar(s)
+
+Output: 2
