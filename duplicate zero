@@ -1,0 +1,14 @@
+ let zeros = arr.filter(x => x === 0).length;
+    let n = arr.length;
+
+    for (let i = n - 1; i >= 0; i--) {
+        if (i + zeros < n) {
+            arr[i + zeros] = arr[i];
+        }
+        if (arr[i] === 0) {
+            zeros--;
+            if (i + zeros < n) {
+                arr[i + zeros] = 0;
+            }
+        }
+    }
